@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="description"
+      content="Selamat datang di web portfolio saya. Saya adalah mahasiswa yang sedang belajar dan mendalami dunia web development. Fokus saya ada di front-end, mulai dari tampilan, layout, sampai pengalaman pengguna. Lewat website ini, saya menampilkan beberapa project dan hasil pembelajaran yang sudah saya kerjakan."
+    />
+
+    <meta itemprop="name" content="Muhammad Ihsan Affandi">
+    <meta itemprop="description" content="Selamat datang di web portfolio saya. Saya adalah mahasiswa yang sedang belajar dan mendalami dunia web development. Fokus saya ada di front-end, mulai dari tampilan, layout, sampai pengalaman pengguna. Lewat website ini, saya menampilkan beberapa project dan hasil pembelajaran yang sudah saya kerjakan.">
+    <meta itemprop="image" content="assets/images/sharing-card.png">
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <title>Muhammad Ihsan Affandi</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = document.body.dataset.theme || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#profile">Profile</a></li>
+          <li class="nav-item"><a href="#work">Projek saya</a></li>
+          <li class="nav-item"><a href="#blog">Media</a></li>
+          <li class="nav-item"><a href="#skills">Keahlian saya</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Kontak</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+
+          <h1 class="h1">
+            <span>Hi, Saya Muhammad Ihsan Affandi</span>
+            <span>Mahasiswa Universitas Pamulang</span>
+          </h1>
+
+          <p class="header-text">
+           Saya adalah mahasiswa yang sedang belajar dan mendalami dunia web development. Fokus saya ada di front-end, mulai dari tampilan, layout, sampai pengalaman pengguna. Lewat website ini, saya menampilkan beberapa project dan hasil pembelajaran yang sudah saya kerjakan.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Hubungi Saya</a>
+            <a href="#work" class="btn btn-secondary">Lihat Project Saya</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION PROFILE -->
+      <section class="profile">
+        <div class="container">
+          <h2 class="h2" id="profile">Profile Saya</h2>
+          <div class="profile-content">
+            <div class="profile-image">
+              <img
+                src="assets/images/profile-photo.jpg"
+                alt="Muhammad Ihsan Affandi"
+                loading="lazy"
+              />
+            </div>
+            <div class="profile-textbox">
+              <div class="profile-info">
+                <div class="profile-info-item">
+                  <strong>Nama:</strong>
+                  <span>Muhammad Ihsan Affandi</span>
+                </div>
+                <div class="profile-info-item">
+                  <strong>Universitas:</strong>
+                  <span>Universitas Pamulang</span>
+                </div>
+                <div class="profile-info-item">
+                  <strong>Jurusan:</strong>
+                  <span>Sistem Informasi</span>
+                </div>
+                <div class="profile-info-item">
+                  <strong>Minat:</strong>
+                  <span>Front-End Web Development</span>
+                </div>
+              </div>
+              <p class="profile-text">
+                Saya adalah seorang mahasiswa yang passionate dalam dunia teknologi, 
+                khususnya dalam pengembangan website. Perjalanan saya di dunia coding 
+                dimulai dari ketertarikan untuk membuat website yang tidak hanya 
+                fungsional, tetapi juga indah dan nyaman digunakan.
+              </p>
+              <p class="profile-text">
+                Saat ini saya fokus mempelajari teknologi front-end seperti HTML, CSS, 
+                dan JavaScript. Saya percaya bahwa kombinasi antara kreativitas desain 
+                dan kemampuan teknis programming adalah kunci untuk menciptakan 
+                pengalaman digital yang luar biasa.
+              </p>
+              <p class="profile-text">
+                Selain belajar, saya juga aktif mengerjakan berbagai project untuk 
+                mengasah kemampuan dan terus berkembang sebagai web developer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Projek Pilihan</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Latihan Menggunakan CSS</h3>
+                <p class="work-text">
+                  Proyek ini dibuat sebagai latihan untuk memahami dan menerapkan CSS 
+                  dalam pembuatan tampilan website. Pada bagian ini, saya mempelajari pengaturan layout, warna, font, serta responsivitas
+                  agar website dapat tampil rapi dan nyaman diakses pada berbagai perangkat.
+                </p>
+                <ol class="work-technologies">
+                  <li>Visual Studio Code</li>
+                </ol>
+                <div class="work-links">
+                </div>
+              </div>
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/portfolio-template.webp"
+                  alt="portfolio-template"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Mockup Berita</h3>
+                <p class="work-text">Mockup berita ini dibuat sebagai simulasi tampilan website portal berita. 
+                  Proyek ini bertujuan untuk melatih kemampuan dalam menyusun struktur halaman, mengatur layout konten, 
+                  serta menerapkan desain sederhana menggunakan HTML dan CSS.</p>
+                <ol class="work-technologies">
+                  <li>Visual Studio Code</li>
+                </ol>
+                <div class="work-links">
+                </div>
+              </div>
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/berita.webp"
+                  alt="berita"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Function</h3>
+                <p class="work-text">
+                  Proyek ini merupakan website sederhana yang memiliki fungsi
+                  untuk menghitung umur mahasiswa berdasarkan data yang dimasukkan oleh pengguna.
+                  Melalui proyek ini, saya belajar menghubungkan tampilan antarmuka dengan fungsi logika dasar menggunakan elemen input pada web.
+                </p>
+                <ol class="work-technologies">
+                  <li>Visual Studio Code</li>
+                </ol>
+                <div class="work-links">
+                </div>
+              </div>
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/tabel-umur.webp"
+                  alt="tabel-umur"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="article">
+        <div class="container">
+          <h2 class="h2" id="blog">Media</h2>
+          <div class="article-boxes">
+            <article class="article-box featured-article">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h3">
+                    5 CSS tips every developer should know
+                  </h3>
+                  <p class="article-text">
+                    Note: A look at 5 useful CSS tips and tricks, 
+                    like single-colour gradients, the user-select property, masks, escaping scroll containers, and more.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://youtu.be/bssZTv3BgkE?si=jnG0THinzXHgnDje" class="link" target="_blank" rel="noopener"
+                    >Lanjut ke youtube</a
+                  >
+                  <span class="reaction-count">
+                    <img src="./assets/images/heart-outline.svg" alt="heart" />
+                    2,5k
+                  </span>
+                </div>
+              </div>
+              <div class="article-illustration" style="max-width: 600px; margin: 0 auto;">
+                <video controls loading="lazy" style="width: 100%; height: auto;">
+                  <source src="assets/videos/your-video.mp4" type="video/mp4">
+                  <source src="assets/videos/your-video.webm" type="video/webm">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+
+            <article class="article-box">
+              <picture class="article-illustration">
+                <img
+                  src="assets/images/rose.webp"
+                  alt="Media 1"
+                  loading="lazy"
+                />
+              </picture>
+              <audio controls style="width: 100%; margin-top: 10px;">
+                <source src="assets/audio/audio1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </article>
+
+            <article class="article-box">
+              <picture class="article-illustration">
+                <img
+                  src="assets/images/rose2.webp"
+                  alt="Media 2"
+                  loading="lazy"
+                />
+              </picture>
+              <audio controls style="width: 100%; margin-top: 10px;">
+                <source src="assets/audio/audio2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </article>
+
+            <article class="article-box">
+              <picture class="article-illustration">
+                <img
+                  src="assets/images/rose3.webp"
+                  alt="Media 3"
+                  loading="lazy"
+                />
+              </picture>
+              <audio controls style="width: 100%; margin-top: 10px;">
+                <source src="assets/audio/audio3.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">Keahlian Saya</h2>
+          <div class="skills-description">
+            <p>Saya memiliki kemampuan dalam membuat website sederhana menggunakan HTML, CSS, dan JavaScript. Selain itu, saya juga dapat mendesain tampilan UI/UX untuk platform e-commerce yang menarik dan user-friendly.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Kirim Pesan</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Deskripsi Singkat
+              </strong>
+              <p class="contact-text">
+                Saya adalah seorang mahasiswa yang tertarik di bidang pengembangan web,
+                khususnya pada pembuatan tampilan dan sistem yang rapi, responsif, dan mudah digunakan.
+                Saya senang membangun website dari nol dan melihat ide berkembang menjadi sesuatu yang nyata.
+                Jika ingin bekerja sama jangan ragu untuk menghubungi saya melalu kontak yang tersedia.
+              </p>
+              <p class="contact-text">
+                Di luar coding, 
+                saya juga suka mencoba hal baru di dunia desain dan pengembangan kreatif.
+              </p>
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Nama</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">Ada yang bisa saya bantu?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/muhammadihsanaffandi" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2025</span> - Created by <a target="_blank" rel="noopener" href="https://github.com/muhammadihsanaffandi">Muhammad Ihsan Affandi.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
